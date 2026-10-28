@@ -9,6 +9,7 @@
   <img alt="Platform" src="https://img.shields.io/badge/platform-Android%2012%2B-3ddc84">
   <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7f52ff">
   <img alt="No Google Play Services" src="https://img.shields.io/badge/Google%20Play%20Services-not%20required-lightgrey">
+  <img alt="License: GPL v3" src="https://img.shields.io/badge/license-GPL--3.0--or--later-blue">
 </p>
 
 <p align="center">
@@ -27,6 +28,7 @@
 - [Why Aegis](#why-aegis)
 - [What it does](#what-it-does)
 - [Roadmap](#roadmap)
+- [Timeline](#timeline)
 - [Screens](#screens)
 - [How tracker detection will work](#how-tracker-detection-will-work)
 - [Battery and Android scan limits](#battery-and-android-scan-limits)
@@ -117,6 +119,19 @@ Every device gets a status and a colour on the map:
 
 ---
 
+## Timeline
+
+The module has three milestones before the final presentation. Each milestone delivers one version.
+
+| Milestone | Delivers | Date |
+|---|---|---|
+| 1 | **v1** - Wi-Fi networks, map, storage, all six screens | TBD |
+| 2 | **v2** - Bluetooth and tracker detection | TBD |
+| 3 | **v3** - Trip mode, battery tuning, polish | TBD |
+| Final | Working app + presentation | mid-December 2026 |
+
+---
+
 ## Screens
 
 | Screen | What it shows | Version |
@@ -168,6 +183,7 @@ So Aegis will:
 
 | Area | Choice | Notes |
 |---|---|---|
+| Application ID | `tech.vladr.aegis` | |
 | Language | **Kotlin** | |
 | UI | **Jetpack Compose** (Material 3) | |
 | Map | **MapLibre Native for Android** + **OpenStreetMap** data | Open source. Tile source planned: OpenFreeMap. No Google Maps. |
@@ -307,7 +323,7 @@ scrcpy                      # mirror the phone screen
 *Planned.*
 
 ```text
-app/src/main/java/<package>/
+app/src/main/java/tech/vladr/aegis/
 ├── ui/          Compose screens and navigation
 ├── scan/        Wi-Fi and Bluetooth scanners
 ├── sensors/     location, motion and compass
@@ -337,7 +353,9 @@ Built for the **Mobile Development** module at **Griffith College Dublin**, 2026
 
 ## License
 
-Not chosen yet.
+Aegis Scanner is free software, released under the **GNU General Public License v3.0 or later** (GPL-3.0-or-later). See [LICENSE](LICENSE) for the full text.
+
+In short: you can use, study, change and share the code, but any version you distribute, including modified ones, must stay open source under the same license.
 
 ---
 
